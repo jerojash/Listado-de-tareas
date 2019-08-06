@@ -7,12 +7,10 @@
         </todo-card>
         <todo-card class="mx-auto mt-10 w-full max-w-lg">
             <div class="text-center">
+                <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Escribir tarea" aria-label="Full name">
                 <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
                     Submit
-                </button>    
-                <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded ">
-                    Erase
-                </button>                   
+                </button>                    
             </div>
         </todo-card>
     </div>
