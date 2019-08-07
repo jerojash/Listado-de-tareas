@@ -1,27 +1,71 @@
 <template>
+   
+   
     <div class="container mx-auto px-4 py-20 flex flex-col flex-wrap">
+        
         <h1 class="font-hairline text-6xl text-center text-gray-500">List of Task</h1>
 
-        <todo-card class="mx-auto mt-4 h-64 w-full max-w-lg">
-            <h1 class="font-hairline text-center text-gray-500">Task</h1>
-            <div class="flex mb-4">
-            <div class="w-3/2 bg-gray-500 h-12">
-                <h1>Primera Tarea
-                <button class="  bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+        <todo-card class=" bg-blue-100 mx-auto mt-4 h-120 w-full max-w-lg">
+            <h1 class="font-hairline text-3xl text-center text-black-500">Task</h1>
+            
+        
+                <div class="text-center">
+
+                <h1>First Activity
+               
+                <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-blue-500 rounded">
                     Delete
                 </button>
-                <div class="text-right"></div>
+            
+
                 <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
                     Edit
                 </button>
-                    <input type="checkbox" name="" id="">
+                    <input  style="margin: 10px" type="checkbox" name="" id="">
                 </h1>
-            </div>
-            </div>
+                </div>
+            
+    
+
+                  
+                  <hr>            
+                 <div class="text-center">
+                <h1>Second Activity
+               
+                <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-blue-500 rounded">
+                    Delete
+                </button>
+            
+
+                <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                    Edit
+                </button>
+                    <input style="margin: 10px" type="checkbox" name="" id="">
+                </h1>
+                </div>
+            
+            
+                <hr>
+                <div class="text-center">
+                <h1>Third Activity
+               
+                <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-blue-500 rounded">
+                    Delete
+                </button>
+            
+
+                <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                    Edit
+                </button>
+                    <input style="margin: 10px" type="checkbox" name="" id="">
+                </h1>
+                  </div>
+            
         </todo-card>
-        <todo-card class="mx-auto mt-10 w-full max-w-lg">
+        <todo-card class=" bg-blue-100 mx-auto mt-10 w-full max-w-lg">
             <div class="text-center">
-                <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Escribir tarea" aria-label="Full name">
+                <input class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="email" placeholder="Write a task...">
+            <br>
                 <button class=" text-left bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
                     Submit
                 </button>                    
