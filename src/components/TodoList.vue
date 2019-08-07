@@ -5,16 +5,16 @@
         
         <h1 class="font-hairline text-6xl text-center text-gray-500">List of Task</h1>
 
-        <todo-card class=" bg-blue-100 mx-auto mt-4 h-120 w-full max-w-lg">
+        <todo-card class=" bg-gray-200 mx-auto mt-4 h-120 w-full max-w-lg">
             <h1 class="font-hairline text-3xl text-center text-black-500">Task</h1>
             
         
                 <div class="text-center">
 
                 <h1>First Activity
-               
                 <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-blue-500 rounded">
                     Delete
+              
                 </button>
             
 
