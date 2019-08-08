@@ -5,7 +5,7 @@
         
         <h1 class="font-hairline text-6xl text-center text-white-500">List of Task</h1>
 
-        <todo-card class=" bg-gray-200 mx-auto mt-4 h-120 w-full max-w-lg">
+        <todo-card class=" bg-gray-300 mx-auto mt-4 h-120 w-full max-w-lg">
             <h1 class="font-hairline text-3xl text-center text-black-500">Task</h1>
             
         
@@ -117,7 +117,7 @@
                   </div>
             
         </todo-card>
-        <todo-card class=" bg-gray-200 mx-auto mt-10 w-full max-w-lg">
+        <todo-card class=" bg-gray-300 mx-auto mt-10 w-full max-w-lg">
             <h1 class="font-hairline text-3xl text-center text-black-500">Create a task
             </h1>
                 <hr>
