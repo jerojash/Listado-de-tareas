@@ -14,6 +14,7 @@
                 <h1>First Activity
                 <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-2 px-4 border-b-4 border-red-700 hover:border-blue-500 rounded">
                     Delete
+                    
               
                 </button>
             
@@ -22,6 +23,24 @@
                     Edit
                 </button>
                     <input  style="margin: 10px" type="checkbox" name="" id="">
+                    <form action="../../form-result.php" target="_blank">
+
+                       <p>
+ 
+                        Horas realizadas:
+                    
+                    <select name="opcion">
+
+                           <option>2 Horas</option>
+                           <option>6 Horas</option>
+                           <option>8 Horas</option>
+                           <option>10 Horas</option>
+ 
+                        </select>
+
+                       </p>
+
+                     </form>
                 </h1>
                 </div>
             
@@ -41,6 +60,24 @@
                     Edit
                 </button>
                     <input style="margin: 10px" type="checkbox" name="" id="">
+                    <form action="../../form-result.php" target="_blank">
+
+                       <p>
+ 
+                        Horas realizadas:
+                    
+                    <select name="opcion">
+
+                           <option>2 Horas</option>
+                           <option>6 Horas</option>
+                           <option>8 Horas</option>
+                           <option>10 Horas</option>
+ 
+                        </select>
+
+                       </p>
+
+                     </form>
                 </h1>
                 </div>
             
@@ -58,18 +95,53 @@
                     Edit
                 </button>
                     <input style="margin: 10px" type="checkbox" name="" id="">
+                    <form action="../../form-result.php" target="_blank">
+                      
+                       <p>
+ 
+                        Horas realizadas:
+                    
+                    <select name="opcion">
+
+                           <option>2 Horas</option>
+                           <option>6 Horas</option>
+                           <option>8 Horas</option>
+                           <option>10 Horas</option>
+ 
+                        </select>
+
+                       </p>
+
+                     </form>
                 </h1>
                   </div>
             
         </todo-card>
-        <todo-card class=" bg-blue-100 mx-auto mt-10 w-full max-w-lg">
+        <todo-card class=" bg-gray-200 mx-auto mt-10 w-full max-w-lg">
             <div class="text-center">
-                <input class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="email" placeholder="Write a task...">
-            <br>
-                <button class=" text-left bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                    Submit
-                </button>                    
+              <p>Name of task: <input type="text" name="nombre" required></p>
+                  <hr>
+                <p> Estimaded Hours:
+                   
+                    <select name="opcion">
+
+                           <option>Two Hours</option>
+                           <option>Four Hours</option>
+                           <option>Six Hours</option>
+                           <option>Eight Hours</option>
+ 
+                        </select>
+                </p>                  
+             <hr>    
             </div>
+             
+              <div class="text-center">
+
+
+             <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                    Accept
+                </button>
+              </div>
         </todo-card>
     </div>
 </template>
