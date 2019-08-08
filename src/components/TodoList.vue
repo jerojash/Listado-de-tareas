@@ -12,14 +12,14 @@
                 <div class="text-center">
 
                 <h1>First Activity
-                <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-1 px-1 border-b-4 border-red-700 hover:border-blue-500 rounded">
+                <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-0 px-1 rounded">
                     Delete
                     
               
                 </button>
             
 
-                <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-1 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-0 px-1  rounded">
                     Edit
                 </button>
                     <input  style="margin: 10px" type="checkbox" name="" id="">
@@ -51,12 +51,12 @@
                  <div class="text-center">
                 <h1>Second Activity
                
-                <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-1 px-1 border-b-4 border-red-700 hover:border-blue-500 rounded">
+                <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-0 px-1  rounded">
                     Delete
                 </button>
             
 
-                <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-1 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-0 px-1  rounded">
                     Edit
                 </button>
                     <input style="margin: 10px" type="checkbox" name="" id="">
@@ -86,12 +86,12 @@
                 <div class="text-center">
                 <h1>Third Activity
                
-                <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-1 px-1 border-b-4 border-red-700 hover:border-blue-500 rounded">
+                <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-0 px-1  rounded">
                     Delete
                 </button>
             
 
-                <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-1 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-0 px-1  rounded">
                     Edit
                 </button>
                     <input style="margin: 10px" type="checkbox" name="" id="">
@@ -122,7 +122,7 @@
             </h1>
                 <hr>
             <div class="text-center">
-              <p>Name of task: <input type="text" name="nombre" required></p>
+              <p>Name of task: <input v-model="mensaje" type="text" name="nombre" required></p>
                   <hr>
                 <p> Estimaded Hours:
                    
@@ -141,8 +141,8 @@
               <div class="text-center">
 
 
-             <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-1 border-b-4 border-blue-700 hover:border-blue-500 rounded ">
-                    Accept
+             <button v-on:click="saludar(mensaje)" class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-1 border-b-4 border-blue-700 hover:border-blue-500 rounded ">
+                    Submit
                 </button>
               </div>
         </todo-card>
@@ -169,9 +169,15 @@ export default {
 
     mounted () {
 
+
     },
 
     methods: {
+
+            saludar:function(parametro){
+
+                alert(parametro);
+            }
 
     }
 }
