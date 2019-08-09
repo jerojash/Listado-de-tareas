@@ -45,76 +45,6 @@
                 </div>
             
     
-
-                  
-                  <hr>            
-                 <div class="text-center">
-                <h1>Second Activity
-               
-                <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-0 px-1  rounded">
-                    Delete
-                </button>
-            
-
-                <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-0 px-1  rounded">
-                    Edit
-                </button>
-                    <input style="margin: 10px" type="checkbox" name="" id="">
-                    <form action="../../form-result.php" target="_blank">
-
-                       <p>
- 
-                        Realized Hours:
-                    
-                    <select name="opcion">
-
-                           <option>Two Hours</option>
-                           <option>Four Hours</option>
-                           <option>Eight Hours</option>
-                           <option>Ten Hours</option>
- 
-                        </select>
-
-                       </p>
-
-                     </form>
-                </h1>
-                </div>
-            
-            
-                <hr>
-                <div class="text-center">
-                <h1>Third Activity
-               
-                <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-0 px-1  rounded">
-                    Delete
-                </button>
-            
-
-                <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-0 px-1  rounded">
-                    Edit
-                </button>
-                    <input style="margin: 10px" type="checkbox" name="" id="">
-                    <form action="../../form-result.php" target="_blank">
-                      
-                       <p>
- 
-                        Realized Hours:
-                    
-                    <select name="opcion">
-
-                          <option>Two Hours</option>
-                           <option>Four Hours</option>
-                           <option>Eight Hours</option>
-                           <option>Ten Hours</option>
- 
-                        </select>
-
-                       </p>
-
-                     </form>
-                </h1>
-                  </div>
             
         </todo-card>
         <todo-card class=" bg-gray-300 mx-auto mt-10 w-full max-w-lg">
@@ -122,7 +52,7 @@
             </h1>
                 <hr>
             <div class="text-center">
-              <p>Name of task: <input v-model="mensaje" type="text" name="nombre" required></p>
+              <p>Name of task: <input v-on:keyup.enter="saludar(mensaje)" v-model="mensaje" type="text" name="nombre" required></p>
                   <hr>
                 <p> Estimaded Hours:
                    
@@ -175,8 +105,7 @@ export default {
     methods: {
 
             saludar:function(parametro){
-
-                alert(parametro);
+             alert(parametro);
             }
 
     }
