@@ -8,51 +8,46 @@
         <todo-card class=" bg-gray-300 mx-auto mt-4 h-120 w-full max-w-lg">
             <h1 class="font-hairline text-3xl text-center text-black-500">Task</h1>
             
-        
-                <div class="text-center">
-
-                <h1>First Activity
-                <button style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-0 px-1 rounded">
-                    Delete
+                    <!-- <div v-for="task in tasks" class="text-center"> -->
+                    <div v-for="(task,index) in tasks" v-bind:key="task.id"  class="text-center">
+                     {{task.title}}
+                    <button v-on:click="deleteTask({index})" style="margin: 10px" class="  bg-red-500 hover:bg-red-400 text-white font-bold py-0 px-1 rounded">
+                        Delete
                     
               
-                </button>
+                    </button>
             
 
-                <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-0 px-1  rounded">
-                    Edit
-                </button>
+                    <button class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-0 px-1  rounded">
+                        Edit
+                    </button>
                     <input  style="margin: 10px" type="checkbox" name="" id="">
                     <form action="../../form-result.php" target="_blank">
 
                        <p>
- 
-                        Realized Hours:
-                    
-                    <select name="opcion">
+                            Realized Hours:
 
-                           <option>Two Hours</option>
-                           <option>Four Hours</option>
-                           <option>Eight Hours</option>
-                           <option>Ten Hours</option>
+                            <select name="opcion">
+
+                            <option>Two Hours</option>
+                            <option>Four Hours</option>
+                            <option>Eight Hours</option>
+                            <option>Ten Hours</option>
  
-                        </select>
+                            </select>
 
                        </p>
 
                      </form>
-                </h1>
-                </div>
-            
-    
-            
+            </div>
         </todo-card>
+        
         <todo-card class=" bg-gray-300 mx-auto mt-10 w-full max-w-lg">
             <h1 class="font-hairline text-3xl text-center text-black-500">Create a task
             </h1>
-                <hr>
+            <hr>
             <div class="text-center">
-              <p>Name of task: <input v-on:keyup.enter="saludar(mensaje)" v-model="mensaje" type="text" name="nombre" required></p>
+              <p>Name of task: <input v-on:keyup.enter="addTask()" v-model="newTask" type="text" name="nombre" required></p>
                   <hr>
                 <p> Estimaded Hours:
                    
@@ -71,7 +66,7 @@
               <div class="text-center">
 
 
-             <button v-on:click="saludar(mensaje)" class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-1 border-b-4 border-blue-700 hover:border-blue-500 rounded ">
+             <button v-on:click="addTask()" class=" bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-1 border-b-4 border-blue-700 hover:border-blue-500 rounded ">
                     Submit
                 </button>
               </div>
@@ -92,23 +87,24 @@ export default {
                     id: 1,
                     title: 'Example task',
                     done: false
-                }
+                },
 
-            ]
+            ],
+            newTask:''
         };
     },
 
     mounted () {
 
-
     },
 
     methods: {
 
-            saludar:function(parametro){
-             alert(parametro);
-            }
+            addTask:function(){
 
+                    this.tasks.push({title: this.newTask});
+                
+            }
     }
 }
 </script>
