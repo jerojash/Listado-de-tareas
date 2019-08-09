@@ -93,6 +93,7 @@ export default {
                     title: 'Example task',
                     done: false
                 }
+
             ]
         };
     },
